@@ -1,0 +1,220 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/marianavaldesnorena/C-Users-maria-OneDrive-Documentos-Introduccion_a_la_ciencia_de_datos/blob/main/Entregable%201%20Python\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Conoce el mínimo común múltiplo de dos números...\")\n",
+        "\n",
+        "import math\n",
+        "\n",
+        "def calcular_mcm(a, b):\n",
+        "\n",
+        "    mcm = abs(a * b) // math.gcd(a, b)\n",
+        "    return mcm\n",
+        "\n",
+        "numero1 = int(input(\"Ingresa el primer número: \"))\n",
+        "numero2 = int(input(\"Ingresa el segundo número: \"))\n",
+        "\n",
+        "resultado = calcular_mcm(numero1, numero2)\n",
+        "\n",
+        "print(f\"El mínimo común múltiplo de {numero1} y {numero2} es {resultado}\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "synB-_FCv8_V",
+        "outputId": "300371d4-1fa5-4d1d-b315-3806885d1f27"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "metadata": {
+            "tags": null
+          },
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Conoce el mínimo común múltiplo de dos números...\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "print(\"Calcula el promedio entre tres numeros\")\n",
+        "numero1 = float(input(\"Digita el primer numero: \"))\n",
+        "numero2 = float(input(\"Digita el segundo numero: \"))\n",
+        "numero3 = float(input(\"Digita el tercer numero: \"))\n",
+        "\n",
+        "promedio = (numero1 + numero2 + numero3) / 3\n",
+        "print(f\"El promedio es: {promedio}\")\n"
+      ],
+      "metadata": {
+        "id": "4Vm5ImQ1h7Zc",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "4504eace-7bb3-4087-f5a8-f370a33e2bf1"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Calcula el promedio entre tres numeros\n",
+            "Digita el primer numero: 2\n",
+            "Digita el segundo numero: 4\n",
+            "Digita el tercer numero: 5\n",
+            "El promedio es: 3.6666666666666665\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Evalua si un numero es par o impar\")\n",
+        "\n",
+        "a=int(input(\"Digita el numero: \"))\n",
+        "# %2 o modulo de dos se le llama a la operacion de dividir un numero entre dos, esta puede dar 0 indicando que es par o 1 indicando que dejo un residuo y por ende es impar\n",
+        "if a%2==0:\n",
+        "    print(\"El numero es par\")\n",
+        "else:\n",
+        "    print(\"El numero es impar\")\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xwi4pNOkibrP",
+        "outputId": "2b9a9129-3168-4cfb-f38b-16deaa54dcb8"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Evalua si un numero es par o impar\n",
+            "Digita el numero: 46\n",
+            "El numero es par\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"Calcula el factorial de un numero\")\n",
+        "\n",
+        "a=int(input(\"Digita el numero: \"))\n",
+        "\n",
+        "#Se define el valor de la variable factorial para posteriormente multiplicarla por asignacion.\n",
+        "factorial = 1\n",
+        "\n",
+        "#Se crea un ciclo para variable i dentro de un rango, el rango va de 1 hasta a+1 para que se pueda ejecutar hasta el numero de variable a.\n",
+        "for i in range(1, a + 1):\n",
+        "\n",
+        "  #Se multiplica la variable previamente definida por todos los valores que toma la variable i\n",
+        "    factorial *= i\n",
+        "\n",
+        "print(f\"El factorial de {a} es {factorial}\")"
+      ],
+      "metadata": {
+        "id": "ULAe4WByknbd",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "fe3d66ae-13a7-4dde-c59b-bb1d110b87e7"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Calcula el factorial de un numero\n",
+            "Digita el numero: 67\n",
+            "El factorial de 67 es 36471110918188685288249859096605464427167635314049524593701628500267962436943872000000000000000\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"¡Bienvenido a la calculadora de raices cuadradas!\")\n",
+        "\n",
+        "import math\n",
+        "\n",
+        "def calcular_raiz_cuadrada(numero):\n",
+        "    raiz_cuadrada = math.sqrt(numero)\n",
+        "    return raiz_cuadrada\n",
+        "\n",
+        "numero = float(input(\"Introduce un número: \"))\n",
+        "\n",
+        "resultado = calcular_raiz_cuadrada(numero)\n",
+        "\n",
+        "print(f\"La raíz cuadrada de {numero} es {resultado}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "BtTl_gMOtVru",
+        "outputId": "03625e01-97a3-49ee-86b6-f6d3c5d92d59"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "¡Bienvenido a la calculadora de raices cuadradas!\n",
+            "Introduce un número: 213\n",
+            "La raíz cuadrada de 213.0 es 14.594519519326424\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "358KbXA0h1yJ"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ]
+}
